@@ -6,20 +6,24 @@
       title="Argon"
     >
       <template slot="links">
-        <sidebar-item
+        <!-- <sidebar-item
           :link="{
             name: 'Dashboard',
             icon: 'ni ni-tv-2 text-primary',
             path: '/dashboard'
           }"
-        />
+        /> -->
 
+        <sidebar-item :link="{name: 'Home', icon: 'ni ni-building text-blue', path: '/'}"/>
+        <sidebar-item :link="{name: 'HW ', icon: 'ni ni-like-2 text-blue', path: '/hw'}"/>
+        <sidebar-item :link="{name: 'Reports', icon: 'ni ni-chart-pie-35 text-blue', path: '/reports'}"/>
+        <sidebar-item :link="{name: 'Soap', icon: 'ni ni-ruler-pencil text-blue', path: '/forms'}"/>
         <sidebar-item :link="{name: 'Icons', icon: 'ni ni-planet text-blue', path: '/icons'}"/>
-        <sidebar-item :link="{name: 'Maps', icon: 'ni ni-pin-3 text-orange', path: '/maps'}"/>
-        <sidebar-item :link="{name: 'User Profile', icon: 'ni ni-single-02 text-yellow', path: '/profile'}"/>
-        <sidebar-item :link="{name: 'Tables', icon: 'ni ni-bullet-list-67 text-red', path: '/tables'}"/>
-        <sidebar-item :link="{name: 'Login', icon: 'ni ni-key-25 text-info', path: '/login'}"/>
-        <sidebar-item :link="{name: 'Register', icon: 'ni ni-circle-08 text-pink', path: '/register'}"/>
+        <!-- <sidebar-item :link="{name: 'Maps', icon: 'ni ni-pin-3 text-orange', path: '/maps'}"/>
+        <sidebar-item :link="{name: 'Profile', icon: 'ni ni-single-02 text-blue', path: '/profile'}"/>
+        <sidebar-item :link="{name: 'Tables', icon: 'ni ni-bullet-list-67 text-blue', path: '/tables'}"/>
+        <sidebar-item :link="{name: 'Login', icon: 'ni ni-key-25 text-blue', path: '/login'}"/>
+        <sidebar-item :link="{name: 'Register', icon: 'ni ni-circle-08 text-blue', path: '/register'}"/> -->
 
       </template>
     </side-bar>

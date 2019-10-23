@@ -9,7 +9,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: 'dashboard',
+      redirect: 'login',
       component: DashboardLayout,
       children: [
         {
@@ -26,6 +26,16 @@ export default new Router({
           component: () => import(/* webpackChunkName: "demo" */ './views/Icons.vue')
         },
         {
+          path: '/forms',
+          name: 'forms',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Forms.vue')
+        },
+        {
+          path: '/hw',
+          name: 'hw',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Hw.vue')
+        },
+        {
           path: '/profile',
           name: 'profile',
           component: () => import(/* webpackChunkName: "demo" */ './views/UserProfile.vue')
@@ -39,6 +49,11 @@ export default new Router({
           path: '/tables',
           name: 'tables',
           component: () => import(/* webpackChunkName: "demo" */ './views/Tables.vue')
+        },
+        {
+          path: '/reports',
+          name: 'reports',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Reports.vue')
         }
       ]
     },
